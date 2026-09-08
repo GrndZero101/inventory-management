@@ -39,6 +39,7 @@ import {
   TrendingUp,
   RefreshCw,
   FileBarChart,
+  AlertTriangle,
   ChevronLeft,
   ChevronRight
 } from '@lucide/vue'
@@ -56,6 +57,7 @@ export default {
     TrendingUp,
     RefreshCw,
     FileBarChart,
+    AlertTriangle,
     ChevronLeft,
     ChevronRight
   },
@@ -90,6 +92,7 @@ export default {
       { path: '/spending', label: t('nav.finance'), icon: 'Wallet' },
       { path: '/demand', label: t('nav.demandForecast'), icon: 'TrendingUp' },
       { path: '/restocking', label: t('nav.restocking'), icon: 'RefreshCw' },
+      { path: '/backlog', label: t('nav.backlog'), icon: 'AlertTriangle' },
       { path: '/reports', label: t('nav.reports'), icon: 'FileBarChart' }
     ])
 
