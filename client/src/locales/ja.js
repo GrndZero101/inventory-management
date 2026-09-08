@@ -6,6 +6,8 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充',
+    reports: 'レポート',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,12 +108,14 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '提出済み注文',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    days: '日',
     table: {
       orderNumber: '注文番号',
       orderId: '注文ID',
@@ -125,7 +129,9 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム',
+      totalCost: '総コスト'
     }
   },
 
@@ -185,6 +191,28 @@ export default {
       change: '変化',
       trend: 'トレンド',
       period: '期間'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充',
+    description: '需要予測に基づいた予算駆動型の補充提案を生成します',
+    budgetLabel: '予算',
+    budgetUsed: '使用予算',
+    budgetRemaining: '残り予算',
+    recommendedItems: '推奨品目',
+    placeOrder: '注文する',
+    orderSubmitted: '補充注文が正常に送信されました',
+    noRecommendations: 'この予算レベルでは補充提案がありません',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      trend: 'トレンド',
+      demandGap: '需要ギャップ',
+      unitCost: '単価',
+      suggestedQty: '推奨数量',
+      lineTotal: '小計'
     }
   },
 
@@ -302,6 +330,24 @@ export default {
     dueDate: '期限',
     addTask: 'タスクを追加',
     noTasks: 'タスクがありません。上記からタスクを追加してください！'
+  },
+
+  // Purchase Order Modal
+  purchaseOrder: {
+    createTitle: '発注書を作成',
+    viewTitle: '発注書の詳細',
+    supplierName: 'サプライヤー名',
+    quantity: '数量',
+    unitCost: '単価',
+    expectedDeliveryDate: '納品予定日',
+    notes: '備考',
+    status: 'ステータス',
+    createdDate: '作成日',
+    submitButton: '発注書を作成',
+    closeButton: '閉じる',
+    loading: '発注書を読み込み中...',
+    notFound: 'この項目の発注書は見つかりませんでした。',
+    genericError: 'エラーが発生しました。もう一度お試しください。'
   },
 
   // Language

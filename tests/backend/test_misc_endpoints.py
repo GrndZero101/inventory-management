@@ -45,6 +45,15 @@ class TestDemandEndpoints:
             assert forecast["current_demand"] >= 0
             assert forecast["forecasted_demand"] >= 0
 
+    def test_demand_forecast_has_unit_cost(self, client):
+        """Test that every demand forecast has a positive unit cost."""
+        response = client.get("/api/demand")
+        data = response.json()
+
+        for forecast in data:
+            assert "unit_cost" in forecast
+            assert forecast["unit_cost"] > 0
+
     def test_stable_demand_items_have_small_changes(self, client):
         """Test that items with 'stable' trend have less than 2% change."""
         response = client.get("/api/demand")

@@ -6,6 +6,8 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
+    reports: 'Reports',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,12 +108,14 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    days: 'days',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -125,7 +129,9 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Lead Time',
+      totalCost: 'Total Cost'
     }
   },
 
@@ -185,6 +191,28 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Generate budget-driven restock recommendations from demand forecasts',
+    budgetLabel: 'Budget',
+    budgetUsed: 'Budget Used',
+    budgetRemaining: 'Budget Remaining',
+    recommendedItems: 'Recommended Items',
+    placeOrder: 'Place Order',
+    orderSubmitted: 'Restock order submitted successfully',
+    noRecommendations: 'No restock recommendations at this budget level',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      demandGap: 'Demand Gap',
+      unitCost: 'Unit Cost',
+      suggestedQty: 'Suggested Qty',
+      lineTotal: 'Line Total'
     }
   },
 
@@ -302,6 +330,24 @@ export default {
     dueDate: 'Due Date',
     addTask: 'Add Task',
     noTasks: 'No tasks yet. Add your first task above!'
+  },
+
+  // Purchase Order Modal
+  purchaseOrder: {
+    createTitle: 'Create Purchase Order',
+    viewTitle: 'Purchase Order Details',
+    supplierName: 'Supplier Name',
+    quantity: 'Quantity',
+    unitCost: 'Unit Cost',
+    expectedDeliveryDate: 'Expected Delivery Date',
+    notes: 'Notes',
+    status: 'Status',
+    createdDate: 'Created Date',
+    submitButton: 'Create Purchase Order',
+    closeButton: 'Close',
+    loading: 'Loading purchase order...',
+    notFound: 'No purchase order found for this item.',
+    genericError: 'Something went wrong. Please try again.'
   },
 
   // Language
