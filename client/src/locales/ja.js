@@ -8,6 +8,7 @@ export default {
     demandForecast: '需要予測',
     restocking: '補充',
     reports: 'レポート',
+    backlog: 'バックログ',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -213,6 +214,66 @@ export default {
       unitCost: '単価',
       suggestedQty: '推奨数量',
       lineTotal: '小計'
+    }
+  },
+
+  // Reports
+  reports: {
+    title: 'パフォーマンスレポート',
+    description: '四半期のパフォーマンス指標と月次トレンドを表示',
+    quarterlyPerformance: {
+      title: '四半期実績',
+      table: {
+        quarter: '四半期',
+        totalOrders: '総注文数',
+        totalRevenue: '総売上',
+        avgOrderValue: '平均注文額',
+        fulfillmentRate: '充足率'
+      }
+    },
+    monthlyTrend: {
+      title: '月次売上推移'
+    },
+    monthOverMonth: {
+      title: '前月比分析',
+      table: {
+        month: '月',
+        orders: '注文数',
+        revenue: '売上',
+        change: '増減',
+        growthRate: '成長率'
+      }
+    },
+    summary: {
+      totalRevenueYTD: '総売上（年初来）',
+      avgMonthlyRevenue: '月平均売上',
+      totalOrdersYTD: '総注文数（年初来）',
+      bestQuarter: '最高実績四半期'
+    },
+    noData: '選択したフィルターのレポートデータがありません'
+  },
+
+  // Backlog
+  backlog: {
+    title: 'バックログ管理',
+    description: '在庫不足の追跡と解消',
+    highPriority: '優先度高',
+    mediumPriority: '優先度中',
+    lowPriority: '優先度低',
+    totalItems: '総バックログ件数',
+    itemsTitle: 'バックログ品目',
+    noItems: 'バックログはありません - すべての注文を履行できます！',
+    unitsShort: '単位不足',
+    days: '日',
+    table: {
+      orderId: '注文ID',
+      sku: 'SKU',
+      itemName: '品目名',
+      quantityNeeded: '必要数量',
+      quantityAvailable: '在庫数量',
+      shortage: '不足',
+      daysDelayed: '遅延日数',
+      priority: '優先度'
     }
   },
 
